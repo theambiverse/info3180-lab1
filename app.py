@@ -23,6 +23,11 @@ def page_not_found(error):
     """Custom 404 page."""
     return render_template('404.html'), 404
 
+@app.route('/about')
+
+def about():
+    return render_template('about.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True, host="127.0.0.1", port=5000)
